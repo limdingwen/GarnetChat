@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Garnet Chat</title>
+    
+    <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="//erika-server.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div id="chat">
+            <img id="border" class="pixelScale" src="resources/gui/chat/chatbox.png">
+            <img id="next" class="pixelScale" src="resources/gui/chat/next.png">
+            <img id="sprite" class="pixelScale" src="resources/sprites/sprite.png">
+            <div id="text"></div>
+            
+            <audio id="talker" src="resources/talkers/talk.wav" volume="0.5"></audio>
+            <audio id="message" src="resources/sounds/message.mp3" volume="2"></audio>
+        </div>
+        
+        <div id="input">
+            <input id="text">
+            <div id="face">A face</div>
+            <select id="speed">
+                <option value="revelation">Revelation (Slowest)</option>
+                <option value="serious">Serious</option>
+                <option value="casual" selected>Casual</option>
+                <option value="cheerful">Cheerful</option>
+                <option value="instant">Instant (Fastest)</option>
+            </select>
+        </div>
+        <!--
+        <div id="profile">
+            <div id="name">Ignis Incendio</div>
+            <div id="species">Charmander</div>
+        </div>-->
+        
+        <div id="status">Offline (Trying to connect...)</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Munro;
+    src: url(resources/fonts/Munro.ttf);
+}
+
+@font-face {
+    font-family: PKMN;
+    src: url(resources/fonts/PKMN.ttf);
+}
+
+body {
+    background: black;
+}
+
+#main {
+    display: none;
+}
+
+#chat {
+    position: relative;
+    
+    width: 700px;
+    height: 152px;
+}
+#chat #border {
+    width: 700px;
+    height: 152px;
+}
+#chat #text {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    
+    width: 620px;
+    height: 112px;
+    
+    color: white;
+    font-family: PKMN;
+    font-size: 37px;
+    line-height: 37px;
+    text-shadow: 3px 3px #000;
+}
+#chat #sprite {
+    display: none;
+    
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    
+    width: 130px;
+    height: 130px;
+}
+#chat #next {
+    display: none;
+    
+    position: absolute;
+    bottom: -2px;
+    left: 348px;
+    
+    width: 15px;
+    height: 18px;
+}
+
+#input {
+    position: relative;
+    top: 10px;
+    
+    width: 700px;
+    height: 80px;
+}
+#input #text {
+    position: absolute;
+    
+    width: 700px;
+    height: 50px;
+    
+    box-sizing: border-box;
+    border: 2px solid white;
+    
+    background: black;
+    
+    color: white;
+    font-family: PKMN;
+    font-size: 30px;
+    
+    padding: 0 20px;
+}
+#input #speed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#status {
+    position: relative;
+    left: 0;
+    top: 15px;
+    
+    color: #f00;
+    font-family: PKMN;
+    font-size: 21px;
+}
+
+.pixelScale {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
